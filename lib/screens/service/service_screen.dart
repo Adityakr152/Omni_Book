@@ -29,7 +29,7 @@ class ServiceScreen extends StatelessWidget {
       body: Column(
         children: [
 
-          // 🔹 Service List
+          //  Service List
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.all(12),
@@ -96,7 +96,7 @@ class ServiceScreen extends StatelessWidget {
                           ),
                         ),
 
-                        // 🔹 Price
+                        //  Price
                         Text(
                           "₹${s.price}",
                           style: TextStyle(

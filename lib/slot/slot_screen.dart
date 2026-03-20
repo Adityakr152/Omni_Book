@@ -20,10 +20,7 @@ class SlotScreen extends StatelessWidget {
       backgroundColor: Colors.grey.shade100,
 
       //  AppBar
-      appBar: AppBar(
-        title: Text("Select Slot"),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text("Select Slot"), centerTitle: true),
 
       body: GridView.builder(
         padding: EdgeInsets.all(12),
@@ -43,7 +40,8 @@ class SlotScreen extends StatelessWidget {
             time: t,
             available: p.isSlotAvailable(t),
             spots: p.getAvailableCount(t),
-            isBooked: p.isBooked(t), //
+            isBooked: p.isBooked(t),
+            //
             onTap: () {
               if (!p.isSlotAvailable(t)) return;
 

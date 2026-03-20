@@ -45,10 +45,7 @@ class SlotTile extends StatelessWidget {
           children: [
             Text(
               formattedTime,
-              style: TextStyle(
-                color: textColor,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(color: textColor, fontWeight: FontWeight.bold),
             ),
             if (available)
               Text(
